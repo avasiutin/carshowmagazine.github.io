@@ -1,0 +1,92 @@
+body {
+    /* display: flex; */
+    background-color:#202124;
+    color:rgb(255, 255, 255);
+    font-family: 'Bebas Neue', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* navigation */
+
+nav{
+    background-color: #272727;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+nav a {
+    text-decoration: none;
+    color: #bdc1c6; 
+    padding: 0 10px; 
+    font-size: 1.3rem;;
+}
+nav a:hover{
+    text-decoration: underline;
+}
+
+/* company name */
+h1 {
+    margin: 5px 0 1px;
+    display: flex;
+    justify-content: center;
+    font-style: italic;
+    font-size: 34pt;
+    /* transform: translate(0, 16px); */
+}
+
+.image{
+    background-color: white;
+    height:300px;
+    width:100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    overflow:hidden;
+    align-items: center;
+}
+.image img{
+    height: auto;
+    width: 100%;
+    position:absolute;
+}
+.about  p{
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    
+}
+.about .intro{
+    font-family: 'Bebas Neue', sans-serif;
+}
+/* .img-container{
+    margin: 0 auto;
+    background-color: white;
+    height: 700px;
+    width: 1200px;
+    position: relative;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1 1200px;
+    overflow:hidden;
+    
+    
+}
+/* image behind the banner */
+/* .img-container > .bannerImage{
+    height: auto;
+    width: 100%;
+    transform: translate(0, 50px);
+    margin: 0 auto;
+    position: absolute;
+} */ 
+@media only screen and (min-width: 400px) and (max-width:768px){
+.image{
+    height:150px;
+    width:auto;
+}
+.about{
+    margin: 0 20px;
+}
+}
