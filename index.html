@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-
+<!-- This is educational challenge project: Company Home Page with Flexbox + Grid-->
 <html>
   <head>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
@@ -10,26 +10,74 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto&display=swap" rel="stylesheet">
 
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
   </head>
 
   <body>
-    
+    <!-- navigation -->
     <nav>
       <a href="#shows">Shows</a>
       <a href="#about">About</a>
       <a href="#employees">Employees</a>
     </nav>
-
+    <!-- title -->
     <h1>Car Show Magazine</h1>
-    
     <div class="image">
       <img src="http://jdmchicago.com/wp/wp-content/uploads/2017/09/rx7.jpg" alt="cars">
     </div>
-    <div class="shows"></div>
-    <div class="about">
-      <p id="about" class="intro">About:</p>
-      <p>Car Show Magazine is a place where we share various car events and cultures around the world.</p>
+    
+    <!-- Notes:
+            I implemented some h2 as a paragraph with the h2 class just for the looks. -->
+
     </div>
-    <div class="employees"></div>
+    <!-- about -->
+    <p id="about" class="h2">About:</p> 
+    <div class="about">
+      <p>Car Show Magazine is a place where we share various car events and cultures around the world.<br>
+      </p>
+    </div>
+
+    <!-- show gallery -->
+    <p id="shows" class="h2">Shows:</p>
+    <div class="shows">
+      <div class="one">
+        <p class="h2">Bikes</p>
+        <img src="http://jdmchicago.com/wp/wp-content/uploads/2017/09/bike.jpg" alt="bikes">
+      </div>
+      <div class="two">
+        <p class="h2">classic cars</p>
+        <img src="http://jdmchicago.com/wp/wp-content/uploads/2017/09/gloww2.jpg" alt="classic cars">
+      </div>
+      <div class="three">
+        <p class="h2">supercars</p>
+        <img src="https://assets.bwbx.io/images/users/iqjWHBFdfxIU/iHTTIXsB6Co0/v0/-1x-1.jpg" alt="supercars">
+      </div>
+      <div class="four">
+        <p class="h2">classic race cars</p>
+        <img src="https://www.goodwood.com/globalassets/.road--racing/event-coverage/fos/2019/september/2020-motorsport-date/78mm-dates-2020-porsche-917-77mm-jayson-fong-goodwood-18092019.jpg?crop=(0,186,2600,1649)&width=1600" alt="classic race cars">
+      </div>
+      <div class="five">
+        <p class="h2">classic races</p>
+        <img src="https://www.goodwood.com/globalassets/.road--racing/event-coverage/revival/2022/4-april/race-list/rac-tt-celebration-pete-summers-goodwood-19092156.jpg?crop=(0,270,2600,1733)&width=1600" alt="classic races">
+      </div>
+      <div class="six">
+        <p class="h2">concept cars</p>
+        <img src="https://cdn.carbuzz.com/gallery-images/1600/1049000/100/1049133.jpg" alt="concept cars">
+      </div>
+    </div>
+
+    <!-- employees -->
+    <p class="h2">Employees:</p>
+    <div id="employees" class="employees">
+      <div class="employee">
+        <img class="rory-reid" src="https://greatbritish.b-cdn.net/wp-content//uploads/2020/05/Rory-Reid-BBC-Top-Gear-Motoring-automotive-Car-Technology-TV-video-Presneter-at-Great-British-Presenters.jpg" alt="Rory Reid">
+      <p>Rory Reid</p>
+      </div>
+      <div class="employee">
+        <img class="chris-harris" src="https://www.topgear.com/sites/default/files/images/news-article/2016/04/07bfd0a3a884fb0c2ed2875c0a304435/chrisharris_online.jpg" alt="Chris Harris">
+      <p>Chris Harris</p>
+      </div>
+    </div>
+      
   </body>
 </html>
