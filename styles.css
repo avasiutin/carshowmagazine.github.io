@@ -1,5 +1,4 @@
 body {
-    /* display: flex; */
     background-color:#202124;
     color:rgb(255, 255, 255);
     font-family: 'Bebas Neue', sans-serif;
@@ -7,36 +6,44 @@ body {
     padding: 0;
 }
 
-/* navigation */
+/* navigation------------------------------------ */
 
 nav{
-    background-color: #272727;
+    background-color: rgb(255, 255, 255);
     display: flex;
     justify-content: center;
     position: relative;
 }
 nav a {
     text-decoration: none;
-    color: #bdc1c6; 
+    color: #202124; 
     padding: 0 10px; 
     font-size: 1.3rem;;
 }
 nav a:hover{
     text-decoration: underline;
+    color: rgb(211, 0, 0);
 }
 
-/* company name */
+/* Company name--------------------------------- */
 h1 {
     margin: 5px 0 1px;
     display: flex;
     justify-content: center;
     font-style: italic;
     font-size: 34pt;
-    /* transform: translate(0, 16px); */
+    
 }
 
+.h2 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.8rem;
+    text-align: center;
+    
+}
+/* Red car image---------------------------- */
 .image{
-    background-color: white;
+    /* background: none; */
     height:300px;
     width:100%;
     display: flex;
@@ -50,43 +57,97 @@ h1 {
     width: 100%;
     position:absolute;
 }
+/* About text-------------------------------- */
+.about{
+    margin: 0 20px;
+}
 .about  p{
     font-family: 'Roboto', sans-serif;
     text-align: center;
-    
 }
 .about .intro{
     font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.8rem;
+    text-align: center;
 }
-/* .img-container{
-    margin: 0 auto;
-    background-color: white;
-    height: 700px;
-    width: 1200px;
-    position: relative;
+
+/* show gallery---------------------------- */
+.shows {
+    /* border: 1px solid red; */
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 0 20px;
+}
+.shows div{
+    background-color: aliceblue;
+    color: #202124;
+    border-radius: 5px;
     display: flex;
-    flex-flow: column;
+    justify-content: center;
+    overflow: hidden; 
+    height: 200px;
+    position: relative;
+}
+
+.shows img {
+    width: 100%;
+    object-fit:cover;
+}
+
+.shows p{
+    color: rgb(255, 255, 255);
+    align-self: center;
+    position:absolute;
+    font-size: 4rem;
+}
+.shows p:hover{
+    color: rgb(251, 255, 0);
+    
+}
+
+/* Emplokyees------------------------------ */
+.employee-intro {
+    display: flex;
+    justify-content: center;
+}
+.employees{
+    display: flex;
     justify-content: center;
     align-items: center;
-    flex: 1 1200px;
-    overflow:hidden;
-    
-    
+    gap: 20px;
 }
-/* image behind the banner */
-/* .img-container > .bannerImage{
-    height: auto;
-    width: 100%;
-    transform: translate(0, 50px);
-    margin: 0 auto;
-    position: absolute;
-} */ 
-@media only screen and (min-width: 400px) and (max-width:768px){
+
+.employees .employee{
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.employees img{
+    border-radius: 50%;
+    overflow:hidden;
+    height: 200px;
+    width: 200px;
+    object-fit:cover;
+    justify-items: center;
+}
+
+.employees .chris-harris{
+    object-position: 35% 50%;
+}
+
+/* media queries---------------------------- */
+@media only screen and (min-width: 10px) and (max-width:500px){
 .image{
     height:150px;
     width:auto;
 }
-.about{
-    margin: 0 20px;
+.employees{
+    flex-wrap: wrap;
+}
+.shows{
+    grid-template-columns: repeat(1, 1fr);
 }
 }
